@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #333333;
+        }
+
+        h1 {
+            color: #23be76;
+            text-align: center;
+        }
+
+        h2 {
+            color: #f5880b;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 48%;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #666666;
+        }
+
+        .date {
+            float: right;
+            color: #666666;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills li {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #23be76;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+        }
+
+        .contact li i {
+            margin-right: 10px;
+            color: #333333;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile-info {
+            margin-left: 20px;
+        }
+
+        .profile h4 {
+            margin: 0;
+            color: #23be76;
+        }
+
+        .profile p {
+            margin: 5px 0;
+            color: #666666;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .education-table th,
+        .education-table td {
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+            text-align: center;
+        }
+
+        .education-table th {
+            background-color: #23be76;
+            color: #ffffff;
+        }
+
+        .profile-interests {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile-interests .interest-item {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: #23be76;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .references {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #23be76;
+            text-align: Left;
+        }
+
+        .references table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .references td {
+            
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="section">
+
+        <div class="profile">
+            <img src="anindyaimg-01.png" alt="Profile Picture" width="200" height="200">
+            <div class="profile-info">
+                <div class="fullname">
+                    <h4 class="first-name">Anindya</h4>
+                    <h2 class="last-name">Chowdhury</h2>
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Dhaka" style="color:#23be76;">Dhaka</a>, <a href="https://en.wikipedia.org/wiki/Bangladesh" style="color:#23be76;">Bangladesh</a></p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: example@example.com</p>
+                <p><a href="https://example.com" style="color:#23be76;">Website</a></p>
+            </div>
+        </div>
+        <p>I am a Website developer. I can make any kind of website using HTML, CSS, PHP, JavaScirpt.</p>    
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <div class="column">
+                <h2>Work Experience</h2>
+                <div class="item">
+                    <p class="title">Software Engineer</p>
+                    <p class="subtitle">ABC Company</p>
+                    <p class="date">2014 - Present</p>
+                </div>
+                <div class="item">
+                    <p class="title">Intern</p>
+                    <p class="subtitle">XYZ Company</p>
+                    <p class="date">2013</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <div class="column">
+                <h2>Education</h2>
+                <table class="education-table">
+                    <tr>
+                        <th>Exam</th>
+                        <th>GPA</th>
+                        <th>Board</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>5.00</td>
+                        <td>Dhaka</td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>5.00</td>
+                        <td>Dhaka</td>
+                        <td>2018</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="column">
+                <h2>Interest</h2>
+                <div class="profile-interests">
+                    <div class="interest-item">Cricket</div>
+                    <div class="interest-item">Designing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+    <div class="column">
+        <h2>Interest</h2>
+        <div class="Personal Profile">
+            <div class="interest-item">Facebook</div>
+            <div class="interest-item">Youtube</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="section">
+        <h2>References</h2>
+        <div class="references">
+            <table>
+                <tr>
+                    <td>Rashid Khan</td>
+                    <td>Aryan Ahmed</td>
+                </tr>
+                <tr>
+                    <td>Senior Executive</td>
+                    <td>Senior Executive</td>
+                </tr>
+                <tr>
+                    <td>Pixel Studios</td>
+                    <td>Pixel Studios</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
